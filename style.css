@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(72, 102, 136);
+    color: white;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 70vh;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.screen-timer {
+    width: 80%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-timer span {
+    font-size: 60px;
+}
+
+.button-section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn1, .btn2, .btn3 {
+    height: 55px;
+    width: 55px;
+    background-color: rgb(56, 139, 139);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    transition: 0.3s ease-in all;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1 {
+    font-size: 30px;
+}
+
+.btn2 {
+    font-size: 35px;
+}
+
+.btn3 {
+    font-size: 30px;
+}
+
+.btn1:active,
+.btn2:active, 
+.btn3:active {
+    transform: scale(0.9);
+}
+
+/* Responsive Design */
+
+/* For large tablets and small desktops */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 50%;
+    }
+    
+    .container h1 {
+        font-size: 45px;
+    }
+    
+    .screen-timer span {
+        font-size: 55px;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 60%;
+    }
+    
+    .container h1 {
+        font-size: 40px;
+    }
+    
+    .screen-timer {
+        width: 85%;
+    }
+    
+    .screen-timer span {
+        font-size: 50px;
+    }
+    
+    .button-section {
+        gap: 40px;
+    }
+}
+
+/* For small tablets and large phones */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 75%;
+        height: 80vh;
+    }
+    
+    .container h1 {
+        font-size: 35px;
+    }
+    
+    .screen-timer {
+        width: 90%;
+        height: 25%;
+    }
+    
+    .screen-timer span {
+        font-size: 45px;
+    }
+    
+    .button-section {
+        gap: 30px;
+    }
+    
+    .btn1, .btn2, .btn3 {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* For phones */
+@media screen and (max-width: 576px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        width: 100%;
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    .container h1 {
+        font-size: 30px;
+    }
+    
+    .screen-timer {
+        width: 95%;
+        height: 200px;
+    }
+    
+    .screen-timer span {
+        font-size: 40px;
+    }
+    
+    .button-section {
+        gap: 25px;
+        width: 100%;
+    }
+    
+    .btn1, .btn2, .btn3 {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .btn1 {
+        font-size: 25px;
+    }
+    
+    .btn2 {
+        font-size: 30px;
+    }
+    
+    .btn3 {
+        font-size: 25px;
+    }
+}
+
+/* For very small phones */
+@media screen and (max-width: 375px) {
+    .container h1 {
+        font-size: 24px;
+    }
+    
+    .screen-timer {
+        height: 180px;
+    }
+    
+    .screen-timer span {
+        font-size: 35px;
+    }
+    
+    .button-section {
+        gap: 15px;
+    }
+    
+    .btn1, .btn2, .btn3 {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .btn1 {
+        font-size: 22px;
+    }
+    
+    .btn2 {
+        font-size: 26px;
+    }
+    
+    .btn3 {
+        font-size: 22px;
+    }
+}
+
+/* For landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .container {
+        height: auto;
+        min-height: 90vh;
+    }
+    
+    .screen-timer {
+        height: 150px;
+    }
+}
